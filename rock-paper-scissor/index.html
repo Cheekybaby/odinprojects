@@ -3,16 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game</title>
+    <title>RPS</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div id="title">
-        <h1><span class="r">ROCK</span>-<span class="p">PAPER</span>-<span class="s">SCISSOR</span></h1>
+    <div class="title">
+        <h1><span style="color:red">ROCK</span>-<span style="color:blue">PAPER</span>-<span style="color:brown">SCISSOR</span></h1>
     </div>
-    <div id="display">
-
+    <div class="HumanChoice">
+        <button class="choices choice-1" id="rock">ROCK</button>
+        <button class="choices choice-2" id="paper">PAPER</button>
+        <button class="choices choice-3" id="scissor">SCISSOR</button>
+    </div>
+    <div class="display">
+        <div class="score-wrap">
+            <div class="human">
+                <p>Human Score: </p>
+                <p class="humanScoreBoard">0</p>
+            </div>
+            <div class="computer">
+                <p>Computer Score: </p>
+                <p class="computerScoreBoard">0</p>
+            </div>
+        </div>
+        <div class="winner">
+            <p class="round-winner"></p>
+        </div>
     </div>
 </body>
 </html>

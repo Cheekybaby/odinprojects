@@ -1,31 +1,69 @@
-/* Body */
 body {
     margin: 0;
-    background-color: lightblue;
+    background-color: skyblue;
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 5%;
 }
 
-/* Title */
-#title {
-    color: black;
+/* Game Title */
+.title {
+    box-sizing: border-box;
+    width: 60%;
     text-align: center;
-    margin: 2% 10% 3% 10%;
+    height: 100px;
 }
-.r {
+.HumanChoice {
+    box-sizing: border-box;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding: 3% 5%;
+}
+.HumanChoice > .choices {
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 15%;
+    padding: 10px;
+    overflow: hidden;
+}
+.choice-1 {
+    color: red;
+}
+.choice-2 {
     color: blue;
 }
-.p {
+.choice-3 {
     color: brown;
-}
-.s {
-    color: red;
 }
 
 /* Display */
-#display{
-    background-color: gray;
-    height: 600px;
+.display {
     width: 60%;
+    box-sizing: border-box;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.score-wrap, .winner {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:first baseline;
+}
+.human, .computer {
+    width: 50%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+.winner {
+    font-size: 22px;
+    font-weight: bold;
 }
