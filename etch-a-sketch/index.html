@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="flex-wrapper">
+        <header>
+            <h1>Etch-A-Sketch</h1>
+        </header>
+        <main>
+            <div id="settings">
+                <div id="selector">
+                    <input type="color" id="color-picker" value="#777777" />
+                    <button id="colorBtn">Color</button>
+                    <button id="eraserBtn">Eraser</button>
+                    <button id="clearBtn">Clear</button>
+                </div>
+                <div id="values">
+                    <div id="size-value">16 X 16</div>
+                    <input type="range" id="size-slider" value="16" min="1" max="64" />
+                </div>
+            </div>
+            <div id="sketch-grid"></div>
+        </main>
+        <footer>
+            <p>
+                Copyright ©
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>
+                Shashank Ranjan
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
