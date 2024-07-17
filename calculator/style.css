@@ -1,0 +1,122 @@
+* {
+    background-color: aliceblue;
+}
+body {
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+#flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+}
+header > h1 {
+    color: brown;
+    font-size: 40px;
+}
+
+/* Main */
+main {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#display, #keypad {
+    width: 30%;
+    border: 2px solid black;
+}
+#display {
+    box-sizing: border-box;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    background-color: gray;
+}
+#keypad {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    border-radius: 0 0 10px 10px;
+    gap: 3%;
+    padding-top: 1%;
+    background-color: gray;
+}
+.current-input {
+    border: 2px solid black;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    background-color: azure;
+    height: 15%;
+    width: 90%;
+    text-align: right;
+    font-size: 22px;
+}
+.new-input {
+    height: 30%;
+    width: 90%;
+    border: 2px solid black;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    background-color: azure;
+    text-align: right;
+    font-size: 22px;
+}
+.clear-delete {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    background-color: gray;
+}
+.clear, .delete {
+    height: 80%;
+    width: 40%;
+    border-radius: 10px;
+    background-color: red;
+}
+
+#row1, #row2, #row3, #row4 {
+    height: 21%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: gray;
+}
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine,
+#zero, #decimal, #equal, #addition, #subtract, #multiply, #divide {
+    width: 20%;
+    height: 90%;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 22px;
+}
+#addition, #subtract,
+#multiply, #divide,
+#decimal, #equal {
+    background-color: orange;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+}
+p {
+    font-size: 18px;
+    font-weight: 500;
+}
